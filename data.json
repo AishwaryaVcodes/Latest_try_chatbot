@@ -1,89 +1,90 @@
 {"intents": [
     {"tag": "greeting",
      "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
-     "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
+     "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"]
      
     },
     {"tag": "goodbye",
      "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
-     "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+     "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."]
      
     },
     {"tag": "thanks",
      "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
-     "responses": ["Happy to help!", "Any time!", "My pleasure"],
+     "responses": ["Happy to help!", "Any time!", "My pleasure"]
      
     },
     {"tag": "noanswer",
      "patterns": ["."],
-     "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+     "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"]
      
     },
     {"tag": "options",
      "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered","what courses are offered"],
-     "responses": ["I can guide you through DAC, DASSD, DBDA,DESD, DIOT, DITTIS", "Offering support for joining courses like dac,dbda,dassd,desd,diot,dittis."],
+     "responses": ["I can guide you through DAC, DASSD, DBDA,DESD, DIOT, DITTIS", "Offering support for joining courses like dac,dbda,dassd,desd,diot,dittis."]
      
     },
     {"tag": "desd",
      "patterns": ["What is PG-DESD?", "DESD", "Tell me what is desd", "what is desd", "desd full form","give details of desd" ],
-     "responses": ["The fullform of PG-DESD is PG Diploma In Embedded Systems and Design.The course is structured in a way to give equal emphasis to hardware and software, enabling engineers to face challenges in the design and development of state of the art embedded systems. The latest curriculum includes a module on Internet of Things (IoT), specifically focusing on IoT architectures, applications, standards and protocols."],
+     "responses": ["The fullform of PG-DESD is PG Diploma In Embedded Systems and Design.The course is structured in a way to give equal emphasis to hardware and software, enabling engineers to face challenges in the design and development of state of the art embedded systems. The latest curriculum includes a module on Internet of Things (IoT), specifically focusing on IoT architectures, applications, standards and protocols."]
      
     },
     {"tag": "diot",
      "patterns": ["What is PG-DIOT?", "DIOT", "Tell me what is diot", "what is diot", "diot full form","give details of diot"],
-     "responses": ["The full form of PG-DIOT is PG Diploma in Internet of Things.This course will enable the student to utilize various Embedded Technologies related to IoT, Sensor Networks, Communication Protocols, Cloud Computing"],
+     "responses": ["The full form of PG-DIOT is PG Diploma in Internet of Things.This course will enable the student to utilize various Embedded Technologies related to IoT, Sensor Networks, Communication Protocols, Cloud Computing"]
      
     },
     {"tag": "dittis",
      "patterns": ["What is PG-DITTIS?", "DITTIS", "Tell me what is dittis", "what is dittis", "dittis full form","give details of dittis" ],
-     "responses": ["The full form of PG-DITTIS is PG Diploma in IT Infrastructure, Systems and Security.The objective of this course is to enable the students to understand the concepts of network security and learn the techniques of detecting the attacks and securing a network from internal and external attacks. "],
+     "responses": ["The full form of PG-DITTIS is PG Diploma in IT Infrastructure, Systems and Security.The objective of this course is to enable the students to understand the concepts of network security and learn the techniques of detecting the attacks and securing a network from internal and external attacks. "]
      
     },
     {"tag": "dbda",
      "patterns": ["What is PG-DBDA?", "DBDA", "Tell me what is dbda", "what is dbda", "dbda full form","give details of dbda"],
-     "responses": ["The full form of PG-DBDA is Post Graduate Diploma in Big Data Analytics. The course outcomes includeds big data analytics concepts, data mining, and visualization techniques. It equips students to solve real-world problems in diverse industries,hands-on experience through consulting and industrial projects, and instills expertise in advanced analytical tools. "],
+     "responses": ["The full form of PG-DBDA is Post Graduate Diploma in Big Data Analytics. The course outcomes includeds big data analytics concepts, data mining, and visualization techniques. It equips students to solve real-world problems in diverse industries,hands-on experience through consulting and industrial projects, and instills expertise in advanced analytical tools. "]
      
     },
     {"tag": "dac",
      "patterns": ["What is PG-DAC?", "DAC", "Tell me what is dac", "what is dac", "dac full form","give details of dac" ],
-     "responses": ["The full form of PG-DAC is Post Graduate Diploma in Advance Computing. The main focus of this course is to enable the candidates fulfilling the eligibility criteria, to develop their skill set mainly in areas like Native and Hybrid Mobile Application Development. The course also focuses on Java Programming, as part of the industry requirement. "],
+     "responses": ["The full form of PG-DAC is Post Graduate Diploma in Advance Computing. The main focus of this course is to enable the candidates fulfilling the eligibility criteria, to develop their skill set mainly in areas like Native and Hybrid Mobile Application Development. The course also focuses on Java Programming, as part of the industry requirement. "]
      
     },
     {"tag": "duration_of_each_course",
      "patterns": ["what is the duration of desd", "what is the duration of diot", "what is the duration of dittis", "what is the duration of wbl"],
-     "responses": ["The duration of the course is 6 months that is 24 weeks approximately full-time course with 900 hours Theory+Practical+Project Work"],
+     "responses": ["The duration of the course is 6 months that is 24 weeks approximately full-time course with 900 hours Theory+Practical+Project Work"]
      
     },
     {"tag": "fee",
      "patterns": ["What is the fee for desd","What is the fee for diot","What is the fee for dittis"],
-     "responses": ["The fee for the course is  INR. 90,000/- plus Goods and Service Tax (GST) as applicable by Government of India (GOI)."],
+     "responses": ["The fee for the course is  INR. 90,000/- plus Goods and Service Tax (GST) as applicable by Government of India (GOI)."]
      
     },
     {"tag": "location_search",
      "patterns": ["Lookup for location", "Tell locations", "I want to search locations", "Share location details" ],
-     "responses": ["There are 2 locations. they are KP and Ecity"],
+     "responses": ["There are 2 locations. they are KP and Ecity"]
      
     },
     {"tag": "facilities",
      "patterns": ["what are the facilities provided?"],
-     "responses": ["Fully equipped classrooms capacity to accommodate students and state-of-art labs to explore you computing skills. Accommodation for out station candidates is facilitated by the center."],
+     "responses": ["Fully equipped classrooms capacity to accommodate students and state-of-art labs to explore you computing skills. Accommodation for out station candidates is facilitated by the center."]
      
     },
     {"tag": "eligibility",
      "patterns": ["What is the eligibility criteria?","What is the eligibility","eligibiliy"],
-     "responses": ["To apply for these courses, applicants should hold a Bachelor's degree in Engineering (e.g., IT, Computer Science, Electronics, Telecommunications, Electrical, or Instrumentation), an MSc/MS in Computer Science, IT, or Electronics, a Bachelor's degree in any engineering field, or a Post Graduate Degree in Management with a relevant Computer Science, IT, or Computer Application background. Additionally, applicants with a Post Graduate Degree in Mathematics, Statistics, or Physics, or degrees such as MCA or MCM, are eligible. It is essential to have secured a minimum of 55% in the qualifying examination."],
+     "responses": ["To apply for these courses, applicants should hold a Bachelor's degree in Engineering (e.g., IT, Computer Science, Electronics, Telecommunications, Electrical, or Instrumentation), an MSc/MS in Computer Science, IT, or Electronics, a Bachelor's degree in any engineering field, or a Post Graduate Degree in Management with a relevant Computer Science, IT, or Computer Application background. Additionally, applicants with a Post Graduate Degree in Mathematics, Statistics, or Physics, or degrees such as MCA or MCM, are eligible. It is essential to have secured a minimum of 55% in the qualifying examination."]
      
     },
     {"tag": "selection_criteria",
      "patterns": ["what is the selection criteria", "Tell selection criteria", "I want to know how the selection", "Share details of selection criteria" ],
-     "responses": ["The selection process consists of a C-DAC Common Admission Test (C-CAT)."],
+     "responses": ["The selection process consists of a C-DAC Common Admission Test (C-CAT)."]
      
     },
     {"tag": "course_start",
      "patterns": ["When does the course start", "Tell when course commence", "I want to know when course starts" ],
-     "responses": ["Twice in a year in the month of September and March. Admission process will start in month of July and December every year. "],
+     "responses": ["Twice in a year in the month of September and March. Admission process will start in month of July and December every year. "]
      
     }
+    
 
 ]
 }

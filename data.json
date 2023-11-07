@@ -2,7 +2,7 @@
     "intents": [
         {
             "tag": "greeting",
-            "patterns": ["Hi there", "How are you", "Is anyone there?", "Hey", "Hola", "Hello", "Good day"],
+            "patterns": ["Hi there", "How are you?", "Is anyone there?", "Hey", "Hola", "Hello", "Good day"],
             "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"]
         },
         {
@@ -18,45 +18,45 @@
         {
             "tag": "noanswer",
             "patterns": ["."],
-            "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"]
+            "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I did'nt understand"]
         },
         {
             "tag": "options",
-            "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered", "what courses are offering","Tell me the courses offered"],
+            "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered?", "what courses are offering?","Tell me the courses offered?"],
             "responses": ["I can guide you through DAC, DASSD, DBDA, DESD, DIOT, DITTIS", "Offering support for joining courses like DAC, DBDA, DASSD, DESD, DIOT, DITTIS."]
         },
         {   "tag":"detailed_options",
-            "patterns":["Tell me about the courses offered?","what are the streams","Tell me about the specialization offered?"],
+            "patterns":["Tell me about the courses offered?","what are the streams?","Tell me about the specialization offered?"],
          "responses": ["We provide courses based on different tracks such as software development(DAC), electronics and software(DESD,DIOT,DUASP),Artificial intelligence and Data Science(DBDA), Security and blockchain(DITISS) "]
         },
         {
             "tag": "desd",
-            "patterns": ["What is PG-DESD?", "DESD", "Tell me what is desd", "what is desd", "desd full form", "give details of desd"],
+            "patterns": ["What is PG-DESD?", "DESD", "Tell me what is desd?", "what is desd?", "desd full form", "give details of desd?"],
             "responses": ["The full form of PG-DESD is PG Diploma In Embedded Systems and Design. The course is structured in a way to give equal emphasis to hardware and software, enabling engineers to face challenges in the design and development of state-of-the-art embedded systems. The latest curriculum includes a module on the Internet of Things (IoT), specifically focusing on IoT architectures, applications, standards, and protocols."]
         },
         {
             "tag": "diot",
-            "patterns": ["What is PG-DIOT?", "DIOT", "Tell me what is diot", "what is diot", "diot full form", "give details of diot"],
+            "patterns": ["What is PG-DIOT?", "DIOT", "Tell me what is diot?", "what is diot?", "diot full form?", "give details of diot?"],
             "responses": ["The full form of PG-DIOT is PG Diploma in Internet of Things. This course will enable the student to utilize various Embedded Technologies related to IoT, Sensor Networks, Communication Protocols, Cloud Computing"]
         },
         {
             "tag": "dittis",
-            "patterns": ["What is PG-DITTIS?", "DITTIS", "Tell me what is dittis", "what is dittis", "dittis full form", "give details of dittis"],
+            "patterns": ["What is PG-DITTIS?", "DITTIS", "Tell me what is dittis?", "what is dittis?", "dittis full form", "give details of dittis?"],
             "responses": ["The full form of PG-DITTIS is PG Diploma in IT Infrastructure, Systems and Security. The objective of this course is to enable the students to understand the concepts of network security and learn the techniques of detecting the attacks and securing a network from internal and external attacks."]
         },
         {
             "tag": "dbda",
-            "patterns": ["What is PG-DBDA?", "DBDA", "Tell me what is dbda", "what is dbda", "dbda full form", "give details of dbda"],
+            "patterns": ["What is PG-DBDA?", "DBDA", "Tell me what is dbda?", "what is dbda?", "dbda full form?", "give details of dbda?"],
             "responses": ["The full form of PG-DBDA is Post Graduate Diploma in Big Data Analytics. The course outcomes include big data analytics concepts, data mining, and visualization techniques. It equips students to solve real-world problems in diverse industries, hands-on experience through consulting and industrial projects, and instills expertise in advanced analytical tools."]
         },
         {
             "tag": "dac",
-            "patterns": ["What is PG-DAC?", "DAC", "Tell me what is dac", "what is dac", "dac full form", "give details of dac"],
+            "patterns": ["What is PG-DAC?", "DAC", "Tell me what is dac?", "what is dac?", "dac full form", "give details of dac?"],
             "responses": ["The full form of PG-DAC is Post Graduate Diploma in Advance Computing. The main focus of this course is to enable the candidates fulfilling the eligibility criteria, to develop their skill set mainly in areas like Native and Hybrid Mobile Application Development. The course also focuses on Java Programming, as part of the industry requirement."]
         },
         {
             "tag": "duration_of_each_course",
-            "patterns": ["what is the duration of desd", "what is the duration of diot", "what is the duration of dittis", "what is the duration of wbl"],
+            "patterns": ["what is the duration of desd?", "what is the duration of diot?", "what is the duration of dittis?"],
             "responses": ["The duration of the course is 6 months, which is approximately 24 weeks, a full-time course with 900 hours of Theory+Practical+Project Work"]
         },
         {
@@ -66,7 +66,7 @@
         },
         {
             "tag": "location_search",
-            "patterns": ["Lookup for location", "Tell locations", "I want to search locations", "Share location details"],
+            "patterns": ["Lookup for location", "Tell locations?", "I want to search locations", "Share location details?"],
             "responses": ["There are 2 locations. They are KP and Ecity"]
         },
         {
@@ -76,17 +76,17 @@
         },
         {
             "tag": "eligibility",
-            "patterns": ["What is the eligibility criteria?", "What is the eligibility", "eligibility"],
+            "patterns": ["What is the eligibility criteria?", "What is the eligibility?", "eligibility"],
             "responses": ["To apply for these courses, applicants should hold a Bachelor's degree in Engineering (e.g., IT, Computer Science, Electronics, Telecommunications, Electrical, or Instrumentation), an MSc/MS in Computer Science, IT, or Electronics, a Bachelor's degree in any engineering field, or a Post Graduate Degree in Management with a relevant Computer Science, IT, or Computer Application background. Additionally, applicants with a Post Graduate Degree in Mathematics, Statistics, or Physics, or degrees such as MCA or MCM, are eligible. It is essential to have secured a minimum of 55% in the qualifying examination."]
         },
         {
             "tag": "selection_criteria",
-            "patterns": ["what is the selection criteria", "Tell selection criteria", "I want to know how the selection", "Share details of selection criteria"],
+            "patterns": ["what is the selection criteria?", "Tell selection criteria?", "I want to know how the selection?", "Share details of selection criteria?"],
             "responses": ["The selection process consists of a C-DAC Common Admission Test (C-CAT)."]
         },
         {
             "tag": "course_start",
-            "patterns": ["When does the course start", "Tell when the course commences", "I want to know when the course starts"],
+            "patterns": ["When does the course start?", "Tell when the course commences?", "I want to know when the course starts?"],
             "responses": ["Twice a year, in the months of September and March. Admission process will start in the months of July and December every year."]
         },
         {
@@ -96,39 +96,39 @@
         },
         {
             "tag": "wbl",
-            "patterns": ["what is the duration of wbl", "what is wbl", "What is the eligibility criteria for wbl?"],
-            "responses": ["WBL is a web-based learning for students who are in their final year of BE/BTech or graduates."]
+            "patterns": ["what is the duration of wbl?", "what is wbl?", "What is the eligibility criteria for wbl?"],
+            "responses": ["WBL is a work-based learning for students who are in their final year of BE/BTech or graduates for 6 months.Work-based learning in computer science (CSE) provides students with practical, real-world experiences, allowing them to apply theoretical knowledge, develop essential skills, and collaborate with industry professionals. This hands-on approach fosters problem-solving abilities and hones technical expertise, preparing students for a successful career in the ever-evolving field of computer science."]
         },
         {
             "tag": "placements",
-            "patterns": ["which companies come for the placements?", "give information about placements"],
+            "patterns": ["which companies come for the placements?", "give information about placements?"],
             "responses": ["Companies like Tech Mahindra, Amdocs, Sapiens, TIA, House of Code, etc., visited the campus. The highest salary package offered is 17 LPA, the average salary package is 7 LPA to 8 LPA, and the minimum salary package is 6 LPA. Any student who works hard will get better placement with a good package."]
         },
         {
             "tag": "officials_number",
-            "patterns": ["where can I find the higher authority numbers? ", "can you please share the phone number", "Can you please share the contact numbers"],
+            "patterns": ["where can I find the higher authority numbers? ", "can you please share the phone number?", "Can you please share the contact numbers?"],
             "responses": ["The phone number for general inquiries is +91-80-2852-3300. Further details can be acquired from the website."]
         },
         {
             "tag": "dassd",
-            "patterns": ["What is PG-DASSD?", "DASSD", "Tell me what is dassd", "what is dassd", "dassd full form", "give details of dassd"],
+            "patterns": ["What is PG-DASSD?", "DASSD", "Tell me what is dassd?", "what is dassd?", "dassd full form?", "give details of dassd?"],
             "responses": ["It is Post Graduate Diploma in Advanced Secure Software Development. The course focuses on security requirements for modern software development with equal emphasis on programming foundations to make the students suitable to work in the IT industry from day one."]
         },
         { "tag": "cutoff",
-            "patterns": ["what is the cutoff for the C-DAC "],
+            "patterns": ["what is the cutoff for the C-DAC? "],
             "responses": ["Cutoffs keep changing every year for different categories. Please refer to the website for further details."]
         },
         {"tag":"admission_steps",
-         "patterns":["How can I take admission at C-DAC Bangalore?","How to get admission in cdac?","What are the admission steps","tell me the steps for admission process","Tell me about the admission process?","How to get admission?","How to get enrolled in the college?"],
+         "patterns":["How can I take admission at C-DAC Bangalore?","How to get admission in cdac?","What are the admission steps?","tell me the steps for admission process?","Tell me about the admission process?","How to get admission?","How to get enrolled in the college?"],
          "responses": ["The steps involved in the C-DAC Bangalore admission process are mentioned below:STEP 1: Application Process -Aspirants can visit the C-DAC official website to apply for the desired course. To apply for any of the accepted exams, aspirants shall do the same by visiting the respective official website. STEP 2: Selection RoundsAppear for the centre-based selection rounds and then wait for the release of their results. For Diploma courses, the C-CAT exam is accepted. STEP 3: Admission Confirmation-After the conclusion of selection rounds, shortlisted students can pay the required amount of fee to confirm their seat."]
         },
         {   "tag":"events",
-            "patterns":["what are the events going on?","What are the list of events","tell me the list of events"],
+            "patterns":["what are the events going on?","What are the list of events?","tell me the list of events?"],
             "responses": ["To know about the current events please check the website "]
         },
         {"tag":"general",
-         "patterns":["I want to know about the cdac","tell me about cdac","describe more about the college","how good is cdac"],
-         "responses": [""]
+         "patterns":["I want to know about the cdac?","tell me about cdac?","describe more about the college?","how good is cdac?"],
+         "responses": ["C-DAC Bengaluru is a renowned center of excellence specializing in HPC, Grid Computing, Cyber Security, IoT, FOSS, and more. It offers indigenous solutions in cloud security, SCADA, Indian Heritage and Language computing, and more. The center contributes extensive experience to enrich education and knowledge in these domains."]
         },
         {"tag":"hostel_accomodation",
          "patterns":["How do we get hostel accomodation?","What is the procedure for hostel accomodation?"],
@@ -143,7 +143,7 @@
          "responses": ["you can leave after 5 am and have to return before 8 pm inside campus premises. In case of night stay you have to inform warden and fill the required form."]
         },
         {"tag":"student_life",
-         "patterns":["How is the student life at C-DAC"],
+         "patterns":["How is the student life at C-DAC?"],
          "responses": ["The student life is really Lively, there is a proper balance between the work and personal Life.It's really a memorable walk of a students life.One can learn a lot of things in here."]
         },
         {"tag":"library",
@@ -155,7 +155,7 @@
          "responses": ["A  minimum of 60% is required to appear in the ongoing examination else the student gets debarred and have to fill a re-examination form."]
         },
         {"tag":"faculty",
-         "patterns":["How many faculty are there in this college?","Give information about the teaching staff?","Who is the director?","Give some information about the faculty.","who are the faculty in the college","what is the student facuty ratio","how accessible are faculty to students"],
+         "patterns":["How many faculty are there in this college?","Give information about the teaching staff?","Who is the director?","Give some information about the faculty.","who are the faculty in the college?","what is the student facuty ratio?","how accessible are faculty to students?"],
          "responses": ["The college has a dedicated and highly qualified teaching staff, with a team of experienced members. The members includes internal and external faculties who specialize in various domains of computer science and related fields. The Director of the college is Dr. Misbah sir, who has a rich academic and research background. The faculty-student ratio is maintained at a commendable 1:80, ensuring that students have easy access to personalized attention and mentorship. The faculty is highly accessible to students through regular office hours, and they are always willing to provide guidance and support in both academic and non-academic matters, creating an enriching learning environment."]
         },
         {"tag":"calendar",

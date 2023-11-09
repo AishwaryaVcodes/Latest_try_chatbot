@@ -127,7 +127,7 @@
             "responses": ["To know about the current events please check the website "]
         },
         {"tag":"general",
-         "patterns":["I want to know about the cdac?","tell me about cdac?","describe more about the college?","how good is cdac?"],
+         "patterns":["I want to know about the cdac?","tell me about cdac?","describe more about the college?","how good is cdac?","What about Cdac?","Is cdac worth going?"],
          "responses": ["C-DAC Bengaluru is a renowned center of excellence specializing in HPC, Grid Computing, Cyber Security, IoT, FOSS, and more. It offers indigenous solutions in cloud security, SCADA, Indian Heritage and Language computing, and more. The center contributes extensive experience to enrich education and knowledge in these domains."]
         },
         {"tag":"hostel_accomodation",
@@ -161,7 +161,66 @@
         {"tag":"calendar",
          "patterns":["When are the examination held?","Give some information about the semester durations.","Can you provide us with the college calendar?","How long is a single semester?","How are the semesters divided ?","How many holidays are provided to the students?","How many examinations are conducted in a semester?"],
          "responses": ["The details of the queries asked is provided in the cdac portal. Kindly check it from there."]
+        },
+        {
+            "tag":"overall_experience",
+            "patterns":["how is the overall experience in cdac?"],
+            "responses":["The overall experience at CDAC Bangalore is enriching. It offers diverse courses in advanced computing and technology, a vibrant academic environment, state-of-the-art facilities, and expert faculty. Students benefit from hands-on training, industry collaboration, and a dynamic learning ecosystem, fostering personal and professional growth."]
+        },
+        {
+            "tag":"general_advice",
+            "patterns":["Provide some general tips?"],
+            "responses":["Students should develop a strong foundation in programming, time management, and problem-solving skills. Stay committed to regular study and practice, as CDAC demands dedication and hard work. Engage with peers and mentors, seek help when needed, and aim for a balanced approach to excel academically."]
+        },
+        {
+            "tag":"about_c_catexam",
+            "patterns":["what is c_catexam?","what is CDAC C-CAT exam?","tell me the details of the c-cat exam"],
+            "responses":["CDAC CAT is a national-level exam conducted by the Centre for Development of Advanced Computing (C-DAC) to offer candidates admission to the various PG Diploma courses. The authorities conduct the exam twice a year and the duration of the exam is 1 hour and 30 minutes. "]
+        },
+        {
+            "tag":"c-cat-application-process",
+            "patterns":["what is the procedure for c-cat aplication?","Give details of c-cat exam application?"],
+            "responses":["The authorities will start the application form of CDAC C-CAT 2023 for September session on  June 6 at the official website. Candidates are advised to check the eligibility criteria first before filling out the application form. Candidates need to visit the online portal and fill in all the important details. They also have to select one of the dates on which they would like to appear for the examination. In the final step, candidates will be required to pay the online application fee through a debit or credit card. "]
+        },
+        {
+            "tag":"c-cat-exam-fee",
+            "patterns":["What is the c-cat exam fee?","Tell me the fees of c-cat exam"],
+            "responses":["If the course category is 1 then the examination fees is Rs.1350 and if the course category is 2 then the examination fee is 1550."]
+        },
+        {
+            "tag":"full_form",
+            "patterns":["What is the full form of the cdac-cat exam?","tell me the full form of cdac-cat exam?"],
+            "responses":["The full form of the cdac cat exam is C-DAC's Computerized Common Admission Test"]
+        },
+        {
+            "tag":"frequency_of_conduct",
+            "patterns":["What is the frequency of conduct?","In one year how many times cat exam occurs?"],
+            "responses":["It occurs 2 times a year"]
+        },
+        {
+            "tag":"ccat_language",
+            "patterns":["what is the language used for c-cat exam?"],
+            "responses":["The language used is english"]
+        },
+        {
+            "tag":"duration_of_ccat_exam",
+            "patterns":["What is the exam duration?","What is the duration of the exam?"],
+            "responses":["The exam duration is 1 Hour 30 Minutes"]
+        },
+        {
+            "tag":"ccat_preparation_tips",
+            "patterns":["give some ccat preparation tips?"],
+            "responses":["To score good marks in CDAC C-CAT exam 2023, candidates have to carefully go through the exam syllabus and pattern. It is advisable that candidates should analyse their topic-wise strengths and weaknesses and further focus more on their weaker areas."]
+        },
+        {
+            "tag":"ccee_exam",
+            "patterns":["What is ccee exam?","Give details on ccee exam?"],
+            "responses":["CCEE is the Course End Exam of CDAC, it takes place after all teaching is over. And it is an important exam because if you score well (overall and module-wise score) you will get more calls during CCPP (Common Placement)."]
+        },
+        {
+            "tag":"ccee_exam_preparation",
+            "patterns":["How to prepare for ccee exam?"],
+            "responses":["As it is a Fast-paced course, learning many modules at a time, so it may happen you start forgetting some minor things thought earlier in any module. So start preparing for exam 2-3 Weeks prior, prepare module in descending order of Scheduled Exams or any order as you wish."]
         }
-      
     ]
 }

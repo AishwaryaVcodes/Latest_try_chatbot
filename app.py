@@ -55,10 +55,19 @@ def getResponse(ints, intents_json):
             break
     return result
 
+# def chatbot_response(msg):
+#     ints = predict_class(msg, model)
+#     res = getResponse(ints, intents)
+#     return res
+
 def chatbot_response(msg):
     ints = predict_class(msg, model)
-    res = getResponse(ints, intents)
-    return res
+    # Check if the intent prediction meets a confidence threshold
+    if float(ints[0]['probability']) < 0.5:
+        return "I'm sorry, I didn't understand that. Please rephrase your question."
+    else:
+        res = getResponse(ints, intents)
+        return res
 
 
 from flask import Flask, render_template, request

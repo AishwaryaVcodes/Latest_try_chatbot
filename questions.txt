@@ -168,10 +168,3 @@ Bot: CDAC stands for the Centre for Development of Advanced Computing. It is an 
 
 User: I don't know
 Bot: For this information, you can contact: put_admin_contact_no.
-
-
-
-
-
-
-

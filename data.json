@@ -3,7 +3,7 @@
         {
             "tag": "greeting",
             "patterns": ["Hi there", "How are you?", "Is anyone there?", "Hey", "Hola", "Hello", "Good day"],
-            "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"]
+            "responses": ["Hey", "Hola", "Hello","Hello, I am good.", "Good to see you again", "Hi there, how can I help?"]
         },
         {
             "tag": "goodbye",
@@ -17,16 +17,16 @@
         },
         {
             "tag": "noanswer",
-            "patterns": ["."],
+            "patterns": [".","??","?","Stupid","idiot","fool"],
             "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I did'nt understand"]
         },
         {
             "tag": "options",
-            "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered?", "what courses are offering?","Tell me the courses offered?"],
+            "patterns": ["What is your job?", "How can you help me?","How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered?", "what courses are offering?","Tell me the courses offered?"],
             "responses": ["I can guide you through DAC, DASSD, DBDA, DESD, DIOT, DITTIS", "Offering support for joining courses like DAC, DBDA, DASSD, DESD, DIOT, DITTIS."]
         },
         {   "tag":"detailed_options",
-            "patterns":["Tell me about the courses offered?","what are the streams?","Tell me about the specialization offered?"],
+            "patterns":["Courses provided","courses","Tell me about the courses offered?","what are the streams?","Tell me about the specialization offered?"],
          "responses": ["We provide courses based on different tracks such as software development(DAC), electronics and software(DESD,DIOT,DUASP),Artificial intelligence and Data Science(DBDA), Security and blockchain(DITISS) "]
         },
         {
@@ -46,8 +46,13 @@
         },
         {
             "tag": "dbda",
-            "patterns": ["What is PG-DBDA?", "DBDA", "Tell me what is dbda?", "what is dbda?", "dbda full form?", "give details of dbda?"],
-            "responses": ["The full form of PG-DBDA is Post Graduate Diploma in Big Data Analytics. The course outcomes include big data analytics concepts, data mining, and visualization techniques. It equips students to solve real-world problems in diverse industries, hands-on experience through consulting and industrial projects, and instills expertise in advanced analytical tools."]
+            "patterns": ["What is PG-DBDA?", "DBDA", "Tell me what is dbda?", "what is dbda?", "dbda full form?", "give details of dbda?","What happens in this 6 months of DBDA course?","Is it right decision to pursue PG-DBDA if one doesn't have a relative experience in this field?"],
+            "responses": ["The full form of PG-DBDA is Post Graduate Diploma in Big Data Analytics. The course outcomes include big data analytics concepts, data mining, and visualization techniques. It equips students to solve real-world problems in diverse industries, hands-on experience through consulting and industrial projects, and instills expertise in advanced analytical tools.","They teach you rhe basics of Java, SQL, mongodb. Relating to big data field you also get to learn and have practical knowledge of R, Statistics with proper assignments, Python, hadoop, hive, hbase, pig, spark, advanced Java includes java with Scala, machine learning basics, Iot introduction, high performance computing basics which is only theory, business analysis, data visualization.","First of all you should be having a graduation degree in computers or IT. Secondly if you have no prior experience in the subject that is fine but you should be aware of the basic programming concepts . Fresh graduates opt for this course as well without having any relative experience in this topic but you must have the basic programming skills and also interest in the subject."]
+        },
+        {
+            "tag": "preparartion_for_dbda",
+            "patterns": ["I got CDAC ACTS Pune for PG DBDA, what should I have to prepare before course?"],
+            "responses": ["Read some basic stuff that may help you to understand things easily during course period as you will get very less time to deal with every module. 1.read DBMS and RDBMS. 2.You can install any Linux flavor and try basic commands that helps you to get familiar with Linux. 3.Do hands on with SQL and NoSQL database like MongoDB. 4.Do basic codes with Python, core Java(only core java is sufficient) 5.Read Hadoop tutorials and hadoop ecosystem basics. 6.Read stats it will help to understands r programming stuff. Note: 15 days period is sufficient to do all this with daily 4 hrs time schedule.I hope it will help."]
         },
         {
             "tag": "dac",
@@ -61,12 +66,12 @@
         },
         {
             "tag": "fee",
-            "patterns": ["What is the fee for desd", "What is the fee for diot", "What is the fee for dittis"],
-            "responses": ["The fee for the course is INR 90,000/- plus Goods and Service Tax (GST) as applicable by the Government of India (GOI)."]
+            "patterns": ["Can you explain cdac fee structure?","What is the fee structure of CDAC courses?","Fee Structure","Fees","cdac fee","What is the fee for desd", "What is the fee for diot", "What is the fee for dittis"],
+            "responses": ["For fee related information please visit: https://www.cdac.in/ or either contact :put_contact_no"]
         },
         {
             "tag": "location_search",
-            "patterns": ["Lookup for location", "Tell locations?", "I want to search locations", "Share location details?"],
+            "patterns": ["Lookup for location", "Tell locations?", "I want to search locations", "Share location details?","What are the centers of cdac?","centers of cdac"],
             "responses": ["There are 2 locations. They are KP and Ecity"]
         },
         {
@@ -75,9 +80,14 @@
             "responses": ["Fully equipped classrooms with the capacity to accommodate students and state-of-the-art labs to explore your computing skills. Accommodation for outstation candidates is facilitated by the center. Course, hostel, classrooms, labs, and mess are very good. Canteen is not available in our college, but the food is served in the mess. It follows proper opening and closing timings."]
         },
         {
+            "tag": "courses",
+            "patterns": ["course","courses","What courses are provided by cdac bangalore?"],
+            "responses": ["There are many courses: 1.PGDAC - very renounced course -good for Programming nerds those who are into Coding(Subjects like : Java , c ,c++ , web programming etc). 2.PGDITISS - for those who like IT infra , Systm and IT Security/ Cybersecurity(Subjects like : Java & Java with Crypto API, PKI, Network, Network Security,Linux , DB , windows System ,Cyber Forensics etc ). 3.PG-DESD- for E&C Engg background interested in Embeded system. 4.PG-DBDA- Bigdata analytics."]
+        },
+        {
             "tag": "eligibility",
-            "patterns": ["What is the eligibility criteria?", "What is the eligibility?", "eligibility"],
-            "responses": ["To apply for these courses, applicants should hold a Bachelor's degree in Engineering (e.g., IT, Computer Science, Electronics, Telecommunications, Electrical, or Instrumentation), an MSc/MS in Computer Science, IT, or Electronics, a Bachelor's degree in any engineering field, or a Post Graduate Degree in Management with a relevant Computer Science, IT, or Computer Application background. Additionally, applicants with a Post Graduate Degree in Mathematics, Statistics, or Physics, or degrees such as MCA or MCM, are eligible. It is essential to have secured a minimum of 55% in the qualifying examination."]
+            "patterns": ["What is the eligibility criteria?", "What is the eligibility?", "eligibility","Can I join the CDAC DAC course with an electrical background?"],
+            "responses": ["To apply for these courses, applicants should hold a Bachelor's degree in Engineering (e.g., IT, Computer Science, Electronics, Telecommunications, Electrical, or Instrumentation), an MSc/MS in Computer Science, IT, or Electronics, a Bachelor's degree in any engineering field, or a Post Graduate Degree in Management with a relevant Computer Science, IT, or Computer Application background. Additionally, applicants with a Post Graduate Degree in Mathematics, Statistics, or Physics, or degrees such as MCA or MCM, are eligible. It is essential to have secured a minimum of 55% in the qualifying examination.","Yes, you can check the eligibility criteria for the course."]
         },
         {
             "tag": "selection_criteria",
@@ -96,13 +106,23 @@
         },
         {
             "tag": "wbl",
-            "patterns": ["what is the duration of wbl?", "what is wbl?", "What is the eligibility criteria for wbl?"],
-            "responses": ["WBL is a work-based learning for students who are in their final year of BE/BTech or graduates for 6 months.Work-based learning in computer science (CSE) provides students with practical, real-world experiences, allowing them to apply theoretical knowledge, develop essential skills, and collaborate with industry professionals. This hands-on approach fosters problem-solving abilities and hones technical expertise, preparing students for a successful career in the ever-evolving field of computer science."]
+            "patterns": ["what is the duration of wbl?","what is wbl?","wbl","WBL","Tell me what is WBL","what is wbl?", "What is the eligibility criteria for wbl?","What is the procedure to get an internship at CDAC?","What are the technologies offered by cdac internship?"],
+            "responses": ["WBL is a work-based learning internship program for students who are in their final year of BE/BTech or graduates for 6 months.Work-based learning in computer science (CSE) provides students with practical, real-world experiences, allowing them to apply theoretical knowledge, develop essential skills, and collaborate with industry professionals. This hands-on approach fosters problem-solving abilities and hones technical expertise, preparing students for a successful career in the ever-evolving field of computer science.","You can apply for wbl by visiting this website:https://wblp.in/search-wbl-Opportunities-filter?org=1&city=11&state=17&tech=1","you can get all information about wbl here:https://wblp.in/","Eligibility: for wbl:Candidates (SC, ST, Women and EWS category) passed out Graduate Engineers or equivalent, M.Sc. or M.C.A. in last 2 years, with following specializations are eligible:1. B.E. or B.Tech (Computer Science, Electronics, Information Technology, Electronics and Telecommunications, Electrical Engineering and Information Technology) and engineering graduates currently in seventh and eighth semester can also apply.2. M.Sc. (Information Technology, Computer Science and Electronics)3. Master of Computer Applications","Technologies offered: Artificial Intelligence, Machine Learning, Augumented Reality/Virtual Reality,Blockchain,Wireless Networks,Smart Mobility,Health Informatics and many more"]
+        },
+        {
+            "tag": "centre",
+            "patterns": ["Which CDAC centre (Electronic City or Byappanhalli) will be alloted if I choose CDAC Bangalore for PG-DESD in councelling?"],
+            "responses": ["Electronic City-Phase1"]
+        },
+        {
+            "tag": "internship",
+            "patterns": ["Stipend","What is the stipend offered by cdac bangalore?","what is the duration of cdac internship?","what is the duration of internship provided by cdac?","what is the duration of internship?","internship","wbl","WBL","Tell me what is WBL","what is wbl?", "What is the eligibility criteria for internship?","What is the procedure to get an internship at CDAC?","What are the technologies offered by cdac internship?"],
+            "responses": ["Stipend - Rs 10,000 per month","6 months","WBL is a work-based learning internship programs for students who are in their final year of BE/BTech or graduates for 6 months.Work-based learning in computer science (CSE) provides students with practical, real-world experiences, allowing them to apply theoretical knowledge, develop essential skills, and collaborate with industry professionals.","You can apply for wbl by visiting this website:https://wblp.in/search-wbl-Opportunities-filter?org=1&city=11&state=17&tech=1","you can get all information about wbl here:https://wblp.in/","Eligibility criteria for wbl:Engineering Students of 7th or 8th Semester (Relevant Disciplines) OR Passed out B.Tech/B.E./MCA/MSc. (Relevant Disciplines) in last 2 years OR SC, ST, EWS and Women candidates","Technologies offered: Artificial Intelligence, Machine Learning, Augumented Reality/Virtual Reality,Blockchain,Wireless Networks,Smart Mobility,Health Informatics and many more"]
         },
         {
             "tag": "placements",
-            "patterns": ["which companies come for the placements?", "give information about placements?"],
-            "responses": ["Companies like Tech Mahindra, Amdocs, Sapiens, TIA, House of Code, etc., visited the campus. The highest salary package offered is 17 LPA, the average salary package is 7 LPA to 8 LPA, and the minimum salary package is 6 LPA. Any student who works hard will get better placement with a good package."]
+            "patterns": ["Does CDAC provide 100% placement?","which companies come for the placements?", "give information about placements?","Which companies come for placements in CDAC?","How should I prepare for CDAC Placements Program?","Which companies will come for placements?","List companies who will come for placements in CDAC Bangalore?","Is it compulsory to have 60% throughout for a CDAC company placement?"],
+            "responses": ["Overall placement of CDAC is approx 80 percent. Some of the courses like Dac and Dbda has very good placement record.","Companies like Tech Mahindra, Amdocs, Sapiens, TIA, House of Code, etc., visited the campus. The highest salary package offered is 17 LPA, the average salary package is 7 LPA to 8 LPA, and the minimum salary package is 6 LPA. Any student who works hard will get better placement with a good package.","In these 6 months you will be trained by our best faculties.","60% is not compulsory, Each company has its own criteria for recruitment. Some companies want students with 60%. Some companies are OK with 55% or even 50%.","How are the CDAC placements?"]
         },
         {
             "tag": "officials_number",
@@ -110,37 +130,41 @@
             "responses": ["The phone number for general inquiries is +91-80-2852-3300. Further details can be acquired from the website."]
         },
         {
-            "tag": "dassd",
-            "patterns": ["What is PG-DASSD?", "DASSD", "Tell me what is dassd?", "what is dassd?", "dassd full form?", "give details of dassd?"],
-            "responses": ["It is Post Graduate Diploma in Advanced Secure Software Development. The course focuses on security requirements for modern software development with equal emphasis on programming foundations to make the students suitable to work in the IT industry from day one."]
+            "tag": "desd",
+            "patterns": ["What is PG-DESD?", "DESD", "Tell me what is desd?", "what is desd?", "desd full form?", "give details of dassd?"],
+            "responses": ["It is PG Diploma in Embedded Systems Design (PG-DESD). The course focuses on security requirements for modern software development with equal emphasis on programming foundations to make the students suitable to work in the IT industry from day one."]
         },
         { "tag": "cutoff",
             "patterns": ["what is the cutoff for the C-DAC? "],
             "responses": ["Cutoffs keep changing every year for different categories. Please refer to the website for further details."]
         },
         {"tag":"admission_steps",
-         "patterns":["How can I take admission at C-DAC Bangalore?","How to get admission in cdac?","What are the admission steps?","tell me the steps for admission process?","Tell me about the admission process?","How to get admission?","How to get enrolled in the college?"],
-         "responses": ["The steps involved in the C-DAC Bangalore admission process are mentioned below:STEP 1: Application Process -Aspirants can visit the C-DAC official website to apply for the desired course. To apply for any of the accepted exams, aspirants shall do the same by visiting the respective official website. STEP 2: Selection RoundsAppear for the centre-based selection rounds and then wait for the release of their results. For Diploma courses, the C-CAT exam is accepted. STEP 3: Admission Confirmation-After the conclusion of selection rounds, shortlisted students can pay the required amount of fee to confirm their seat."]
+         "patterns":["What is the procedure to get admission in CDAC?","How can I take admission at C-DAC Bangalore?","How to get admission in cdac?","What are the admission steps?","tell me the steps for admission process?","Tell me about the admission process?","How to get admission?","How to get enrolled in cdac bangalore?"],
+         "responses": ["1.You cancheck the admission advertising on Centre for Development of Advanced Computing website.It happens twice a year(MAY and OCTOBER).2.Apply for c-cat exam.You can apply for one or more courses,accordingly you have to pay the fee.3.Take the c-cat exam. 4. Wait for Results. 5.apply for counseling and apply for Cdac center. 6.Result will be declared for 1st counseling. 7. you have to pay the initial fee amount for the confirmation of your seats.8.Result will be declared for 2nd counseling. 9.if you have paid the fee for 1st counseling then no need to pay that amount. 10.Rest of amount you have to pay before joining date. 11.On respective date go to the CDAC center to certificate verification and formal admission in cdac.","The steps involved in the C-DAC Bangalore admission process are mentioned below:STEP 1: Application Process -Aspirants can visit the C-DAC official website to apply for the desired course. To apply for any of the accepted exams, aspirants shall do the same by visiting the respective official website. STEP 2: Selection RoundsAppear for the centre-based selection rounds and then wait for the release of their results. For Diploma courses, the C-CAT exam is accepted. STEP 3: Admission Confirmation-After the conclusion of selection rounds, shortlisted students can pay the required amount of fee to confirm their seat.","For more information contact: put_admin_contact_no"]
         },
         {   "tag":"events",
             "patterns":["what are the events going on?","What are the list of events?","tell me the list of events?"],
             "responses": ["To know about the current events please check the website "]
         },
         {"tag":"general",
-         "patterns":["I want to know about the cdac?","tell me about cdac?","describe more about the college?","how good is cdac?","What about Cdac?","Is cdac worth going?"],
-         "responses": ["C-DAC Bengaluru is a renowned center of excellence specializing in HPC, Grid Computing, Cyber Security, IoT, FOSS, and more. It offers indigenous solutions in cloud security, SCADA, Indian Heritage and Language computing, and more. The center contributes extensive experience to enrich education and knowledge in these domains."]
+         "patterns":["Does CDAC have age limit?","Can i get pg room outside of college easily?","I want to know about the cdac?","tell me about cdac?","describe more about the college?","how good is cdac?","What about Cdac?","Is cdac worth going?"],
+         "responses": ["There is no age restriction for admission to C-DAC's PG Diploma courses.","yes","C-DAC Bengaluru is a renowned center of excellence specializing in HPC, Grid Computing, Cyber Security, IoT, FOSS, and more. It offers indigenous solutions in cloud security, SCADA, Indian Heritage and Language computing, and more. The center contributes extensive experience to enrich education and knowledge in these domains."]
         },
         {"tag":"hostel_accomodation",
-         "patterns":["How do we get hostel accomodation?","What is the procedure for hostel accomodation?"],
-         "responses": ["The hostel accomodation cn be provided in either of the following ways: a.By applying directly at hostel office. b.By applying at the time of admission at college administration block."]
+         "patterns":["How do we get hostel accomodation?","What is the procedure for hostel accomodation?","Are there any stay/accomodations inside cdac bengaluru electronic city for a month?"],
+         "responses": ["The hostel accomodation can be provided in either of the following ways: a.By applying directly at hostel office. b.By applying at the time of admission at college administration block.","If you get admission and alloted hostel, then only one can stay at hostel. Also you can find many neraby PGs"]
         },
         {"tag":"hostel_environment",
          "patterns":["How is the hostel environment?","Are there any ragging activities in hostel?"],
          "responses": ["hostel environment is clean and hygienic. staff is cooperative and there is a positive work environment.There aren't any ragging activities in hostel and if found strict actions are taken against such activities."]
         },
+        {"tag":"hostel",
+         "patterns":["Hostel Fee Structure","Hostel fees","hostel fee"],
+         "responses": ["Please contact here for more information: put_here_admin_mail_id"]
+        },
         {"tag":"hostel_timings",
          "patterns":["what are the hostel timings?","what is the hostel outing time","how can we apply for night stay outside campus premises?"],
-         "responses": ["you can leave after 5 am and have to return before 8 pm inside campus premises. In case of night stay you have to inform warden and fill the required form."]
+         "responses": ["you can out anytime but you have to return before 8 pm inside campus premises. In case of night stay you have to inform warden and fill the required form."]
         },
         {"tag":"student_life",
          "patterns":["How is the student life at C-DAC?"],
@@ -152,7 +176,7 @@
         },
         {"tag":"attendance_criteria",
          "patterns":["what is the attendance criteria to appear in exam?","what is the minimum attendance percentage required for exam?"],
-         "responses": ["A  minimum of 60% is required to appear in the ongoing examination else the student gets debarred and have to fill a re-examination form."]
+         "responses": ["A  minimum of 75% is required to appear in the ongoing examination else the student gets debarred and have to fill a re-examination form."]
         },
         {"tag":"faculty",
          "patterns":["How many faculty are there in this college?","Give information about the teaching staff?","Who is the director?","Give some information about the faculty.","who are the faculty in the college?","what is the student facuty ratio?","how accessible are faculty to students?"],
@@ -173,19 +197,14 @@
             "responses":["Students should develop a strong foundation in programming, time management, and problem-solving skills. Stay committed to regular study and practice, as CDAC demands dedication and hard work. Engage with peers and mentors, seek help when needed, and aim for a balanced approach to excel academically."]
         },
         {
-            "tag":"about_c_catexam",
-            "patterns":["what is c_catexam?","what is CDAC C-CAT exam?","tell me the details of the c-cat exam"],
-            "responses":["CDAC CAT is a national-level exam conducted by the Centre for Development of Advanced Computing (C-DAC) to offer candidates admission to the various PG Diploma courses. The authorities conduct the exam twice a year and the duration of the exam is 1 hour and 30 minutes. "]
+            "tag":"C-CAT",
+            "patterns":["what is C-CAT exam?","what is CDAC C-CAT exam?","tell me the details of the CCAT exam","What is the best source and way to crack the CDAC entrance exam?","What is the c-cat exam fee?","Tell me the fees of c-cat exam"],
+            "responses":["CDAC CAT is a national-level exam conducted by the Centre for Development of Advanced Computing (C-DAC) to offer candidates admission to the various PG Diploma courses. The authorities conduct the exam twice a year and the duration of the exam is 1 hour and 30 minutes.","The best source is book and some website and best way is smart study.There is 3 section in C-CAT exam.Every section in C-CAT will have 50 objective-type questions. Each question will have four choices as possible answers of which only one will be correct. There will be +3 (plus three) marks for each correct answer, -1 (minus one) for each wrong answer, and 0 (zero) marks for each un-attempted question. The maximum marks a candidate can obtain in any one section of C-CAT is 150.","If the course category is 1 then the examination fees is Rs.1350 and if the course category is 2 then the examination fee is 1550."]
         },
         {
             "tag":"c-cat-application-process",
             "patterns":["what is the procedure for c-cat aplication?","Give details of c-cat exam application?"],
             "responses":["The authorities will start the application form of CDAC C-CAT 2023 for September session on  June 6 at the official website. Candidates are advised to check the eligibility criteria first before filling out the application form. Candidates need to visit the online portal and fill in all the important details. They also have to select one of the dates on which they would like to appear for the examination. In the final step, candidates will be required to pay the online application fee through a debit or credit card. "]
-        },
-        {
-            "tag":"c-cat-exam-fee",
-            "patterns":["What is the c-cat exam fee?","Tell me the fees of c-cat exam"],
-            "responses":["If the course category is 1 then the examination fees is Rs.1350 and if the course category is 2 then the examination fee is 1550."]
         },
         {
             "tag":"full_form",
@@ -209,18 +228,59 @@
         },
         {
             "tag":"ccat_preparation_tips",
-            "patterns":["give some ccat preparation tips?"],
-            "responses":["To score good marks in CDAC C-CAT exam 2023, candidates have to carefully go through the exam syllabus and pattern. It is advisable that candidates should analyse their topic-wise strengths and weaknesses and further focus more on their weaker areas."]
+            "patterns":["give some ccat preparation tips?","How do I prepare for CCAT Exam?","Can I prepare for CDAC in one month?"],
+            "responses":["To score good marks in CDAC C-CAT exam 2023, candidates have to carefully go through the exam syllabus and pattern. It is advisable that candidates should analyse their topic-wise strengths and weaknesses and further focus more on their weaker areas.","f you wana crack CDAC entrance exam just focused on Aptitude and C language for A+B Section. Also refer Aptitude Questions and Answers for aptitude and c programming MCQ.","Yes, you can easily crack the CDAC Entrance within one month preparation."]
         },
         {
             "tag":"ccee_exam",
-            "patterns":["What is ccee exam?","Give details on ccee exam?"],
+            "patterns":["What is ccee exam?","What is the full form of CCEE?","Give details on ccee exam?"],
             "responses":["CCEE is the Course End Exam of CDAC, it takes place after all teaching is over. And it is an important exam because if you score well (overall and module-wise score) you will get more calls during CCPP (Common Placement)."]
         },
         {
+            "tag":"cdac_bangalore",
+            "patterns":["cdac bangalore","cdac","KP","E-city","Electronic city","Electronic city Bangalore","cdac careers","CDAC","cdac bangaluru","cdac knowledge park","knowledge park","cdac bangalore projects","cdac bangalore services","cdac bangalore products","cdac bangalore events"],
+            "responses":["For more information visit: https://www.cdac.in/","you can get all information about cdac here: https://www.cdac.in/","you can get all information about cdac  bangaluru here:https://www.cdac.in/index.aspx?id=BL"]
+        },
+        {
+            "tag":"cdac",
+            "patterns":["CDAC","Cdac","What is CDAC?","events","products","services","projects","Which CDAC center is best for (DBDA) big data analysis course as well as for placements?","What is the scope of PG-DBDA (Big Data analytic) done through the CDAC?","Is CDAC government or private? "],
+            "responses":["CDAC stands for the Centre for Development of Advanced Computing.It is an autonomous scientific society under the Ministry of Electronics and Information Technology (MeitY) in India. CDAC was established in 1988 with the primary objective of conducting research and development in advanced computing technologies and providing solutions to a variety of societal and industrial challenges.","For more information visit: https://www.cdac.in/","you can get all information about cdac here: https://www.cdac.in/","Centre for Development of Advanced Computing (C-DAC), is a Scientific Society of the Ministry of Electronics and Information Technology, Government of India."]
+        },
+        {
+            "tag":"Don't_know",
+            "patterns":["How do I pay my CDAC fees?","Is CDAC online or offline?","What is the highest package offered in CDAC?","Shall I join CDAC?","Which course should I opt for at a 439 rank in C-DAC PG-DAC or DBDA?","How is the PG big data course from CDAC effective for the freshers in terms of placement?","Rank","C-cat score","How good is C-DAC's PG-DBDA (Big Data)? My rank is 1332.","I have received a CCAT 1092 rank and I am a interested in being a Big Data analyst. What is the future of this stream and the job prospects for it in India?","Should I get CDAC-ACTS (Pune) for PG-DBDA (Big data) with 559 Rank(A+B) or which one will be better for PG-DBDA with this rank?","How is the C-DAC PG-DBDA course from a placement point of view?","Is doing post graduate diploma in big data analytics from C-DAC a good option for those who want to make a career in data science?","Which CDAC center is best for big data analytics?","My CDAC rank is 291 and I am not sure if I should opt for PG-DAC or PG-DBDA. I am interested in big data but placements is also a concern. What should I do?","Can an electronics guy with no IT exposure understand Big Data in the PG-DBDA course at CDAC?","Which preference should I take?","Which course should I select for the CDAC DAC or DBDA if I am a 2016 passout?","Which CDAC centre is better for DAC?","Which CDAC centre is better for PG-DAC?","Which CDAC centre is better for DBDA?","Which CDAC centre is better for PG-DBDA?","Which CDAC centre is better for DITISS?","Which CDAC centre is better for PG-DITISS?","Which CDAC centre is better for DESD?","Which CDAC centre is better for PG-DESD?","How are CDAC PG Diploma placements?","What is the eligibility criteria for CDAC when companies come to visit for placements especially in terms of year of passing?","What is the scope of PG-DBDA (Big Data analytic) done through the CDAC?","I have scored less than 60% in BE (IT) Should I join CDAC.Do CDAC provides placements for below 60%?","If I have less than 50% in BE, can I get admission in CDAC?","Can I get reviews on C-DAC?" ,"Is it beneficial to do C-DAC after 3.5 years of a non-technical job?","Is it worth it to join CDAC? If so, which is the best course for a computer science student, placement-wise and location-wise?" ,"What is the expected average package after doing one of the C-DAC courses?","Which companies come for placement in CDAC if you have a BE aggregate of 59.7%? What companies would I be eligible for?"],
+            "responses":["For this information you can contact: put_admin_contact_no."]
+        },
+        {
+            "tag":"background",
+            "patterns":["How much rank is required for CDAC?","Is CDAC a good option for electrical engineerings what are the future scopes?","Which CDAC institute is the best","Which CDAC institute provide best placement?","Where can I get best placement?","What are the best institutes of CDAC in terms of placement?","Is CDAC a good option for electrical engineerings what are the future scopes?","Is CDAC good for electrical engineer?","I have mechanical background, Can I join CDAC?","I have electrical background, Can I join CDAC?","Are CDAC courses worth doing for electrical engineering students?","Is C-DAC a good option for an electrical and electronics engineer?"],
+            "responses":["good CDAC center cutoff closes at around 1500-2000 rank.","CDAC is providing PG Diploma courses in various fields. For electrical engineer, if you have the interest into electrical circuits and wish to grow in that field, you can definitely go for CDAC PG diploma course in VLSI Design and Embedded Systems.","For more information you can check the eligibility criteria."]
+        },
+        {
             "tag":"ccee_exam_preparation",
-            "patterns":["How to prepare for ccee exam?"],
-            "responses":["As it is a Fast-paced course, learning many modules at a time, so it may happen you start forgetting some minor things thought earlier in any module. So start preparing for exam 2-3 Weeks prior, prepare module in descending order of Scheduled Exams or any order as you wish."]
-        }
+            "patterns":["What is the passing marks for Ccee exam?","What is the CCEE exam in CDAC?","What is the structure of CCEE exam?","Is CCEE exam tough?"],
+            "responses":["Your question is not very clear, but, I can say, you have to score minimum of 40 % in every subject in CCEE . CCEE question paper is usually very very tough , students on an average get somewhere between 40- 60","CCEE is the Course End Exam of CDAC, it takes place after all teaching is over. And it is an important exam because if you score well (overall and module-wise score) you will get more calls during CCPP (Common Placement)","These are basically MCQ exams conducted at the end of the course for all the modules, 14 in our case. Each module will be of 40 marks with 40 MCQs and no negative marking and time limit is 1 hour.","Exam level is medium, not so tough and isn't easy either."]
+        },
+        {
+            "tag":"no",
+            "patterns":["Can I join CDAC after 12th?","Is BCOM student eligible for CDAC?","Can I get direct admission in CDAC?","Can we do CDAC without entrance exam?","Can I get scholarship here?","Do they provide scholarship?","Is there any dresscode in CDAC bangalore?","Is there any uniform in CDAC?"],
+            "responses":["No"]
+        },
+        {
+            "tag":"seats",
+            "patterns":["How many seats are there in CDAC Bangalore?"],
+            "responses":["PG-DAC:240,PG-DBDA:120,PG-DESD:60,PG-DITISS:60"]
+        },
+        {
+            "tag": "fallback",
+            "patterns": ["I don't know", "Sorry, I can't answer that", "I'm not sure"],
+            "responses": ["I'm sorry, I don't have the information you're looking for. Please contact us at support@example.com for assistance."]
+          },
+        {
+            "tag": "introduction",
+            "patterns":["What is your name?","where are you from?","what are you doing?","Tell me more about yourself","What's your purpose?","Why are you here?","Are you a human?","Who created you?","Are you automated?"],
+            "responses":["Hi I'm chat bot for solving admission related queries.Please ask appropriate questions."]
+
+          }
     ]
 }

@@ -71,7 +71,7 @@
         },
         {
             "tag": "location_search",
-            "patterns": ["Lookup for location", "Tell locations?", "I want to search locations", "Share location details?","What are the centers of cdac?","centers of cdac"],
+            "patterns": ["Lookup for location", "Tell locations?", "I want to search locations", "Share location details?"],
             "responses": ["There are 2 locations. They are KP and Ecity"]
         },
         {
@@ -275,12 +275,6 @@
             "tag": "fallback",
             "patterns": ["I don't know", "Sorry, I can't answer that", "I'm not sure"],
             "responses": ["I'm sorry, I don't have the information you're looking for. Please contact us at support@example.com for assistance."]
-          },
-        {
-            "tag": "introduction",
-            "patterns":["What is your name?","where are you from?","what are you doing?","Tell me more about yourself","What's your purpose?","Why are you here?","Are you a human?","Who created you?","Are you automated?"],
-            "responses":["Hi I'm chat bot for solving admission related queries.Please ask appropriate questions."]
-
           }
     ]
 }
